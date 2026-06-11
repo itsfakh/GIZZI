@@ -3,9 +3,9 @@ import streamlit as st
 from PIL import Image
 from google import genai
 
-==========================
-KONFIGURASI HALAMAN
-==========================
+# ==========================
+# KONFIGURASI HALAMAN
+# ==========================
 
 st.set_page_config(
 page_title="CekGizi AI",
