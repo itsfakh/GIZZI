@@ -21,10 +21,10 @@ st.caption("Deteksi kalori dan nutrisi makanan menggunakan Gemini AI")
 # ==========================
 
 try:
-api_key = st.secrets["GEMINI_API_KEY"]
+    api_key = st.secrets["GEMINI_API_KEY"]
 except Exception:
-st.error("GEMINI_API_KEY tidak ditemukan.")
-st.stop()
+    st.error("GEMINI_API_KEY tidak ditemukan.")
+    st.stop()
 
 client = genai.Client(api_key=api_key)
 
