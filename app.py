@@ -39,15 +39,15 @@ type=["jpg", "jpeg", "png"]
 
 if uploaded_file:
 
-image = Image.open(uploaded_file)
+    image = Image.open(uploaded_file)
 
-st.image(
-    image,
-    caption="Foto yang diunggah",
-    use_container_width=True
-)
+    st.image(
+        image,
+        caption="Foto yang diunggah",
+        use_container_width=True
+    )
 
-if st.button("🔍 Analisis Nutrisi"):
+    if st.button("🔍 Analisis Nutrisi"):
 
     with st.spinner("Menganalisis gambar..."):
 
