@@ -16,9 +16,9 @@ layout="centered"
 st.title("🥗 CekGizi AI")
 st.caption("Deteksi kalori dan nutrisi makanan menggunakan Gemini AI")
 
-==========================
-API KEY
-==========================
+# ==========================
+# API KEY
+# ==========================
 
 try:
 api_key = st.secrets["GEMINI_API_KEY"]
@@ -28,9 +28,9 @@ st.stop()
 
 client = genai.Client(api_key=api_key)
 
-==========================
-INPUT FOTO
-==========================
+# ==========================
+# INPUT FOTO
+# ==========================
 
 uploaded_file = st.file_uploader(
 "Upload Foto Makanan",
