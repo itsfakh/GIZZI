@@ -47,7 +47,7 @@ if uploaded_file:
         use_container_width=True
     )
 
-    if st.button("🔍 Analisis Nutrisi"):
+if st.button("🔍 Analisis Nutrisi"):
 
     with st.spinner("Menganalisis gambar..."):
 
